@@ -1,5 +1,5 @@
 import React from 'react';
-import { CoffeeDataHome } from '../data/CoffeeDataHome.jsx';
+import { CoffeeDataHome } from '../data/CoffeeDataHome';
 import { Link } from 'react-router-dom';
 
 const Home = () => {

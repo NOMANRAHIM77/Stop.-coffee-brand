@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux' // 1. Import Provider
-import { store } from './store/store.js'   // 2. Import your configured store
+import { store } from './store/store'   // 2. Import your configured store
 import App from './App.jsx'
 
 import './index.css'

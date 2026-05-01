@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { CoffeeDataCoffeeList } from '../data/CoffeeDataCoffeeList.jsx';
+import { CoffeeDataCoffeeList } from '../data/CoffeeDataCoffeeList';
 import { Link } from 'react-router-dom';
 import { Search, Eye, ShoppingCart, CheckCircle2 } from 'lucide-react';
 
 // Redux Imports
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../slices/cartSlice.js';
+import { addToCart } from '../slices/cartSlice';
 
 const CoffeeList = () => {
   const [searchTerm, setSearchTerm] = useState("");

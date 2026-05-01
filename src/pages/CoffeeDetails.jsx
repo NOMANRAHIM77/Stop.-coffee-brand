@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { CoffeeDataCoffeeList } from '../data/coffeeDataCoffeeList';
+import { CoffeeDataCoffeeList } from '../data/CoffeeDataCoffeeList';
 import { ShoppingCart, CheckCircle2 } from 'lucide-react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../slices/cartSlice';
