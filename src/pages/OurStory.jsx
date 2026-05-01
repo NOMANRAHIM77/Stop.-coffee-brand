@@ -74,12 +74,12 @@ const OurStory = () => {
           <p className="text-lg mb-8 italic">
             IF YOU WANT CARAMEL SWIRLS AND WHIPPED CREAM, GO DOWN THE STREET. IF YOU WANT FUEL, STAY HERE.
           </p>
-          <Link 
-            to="/coffeeList"
-             className="bg-black text-[#FFD700] px-12 py-6 text-2xl hover:bg-[#FFD700] hover:text-black transition-all border-4 border-black"
-          >
-            ENTER THE MENU
-          </Link>
+         <Link 
+  to="/coffeeList"
+  className="bg-black text-[#FFD700] px-6 py-4 text-lg md:px-12 md:py-6 md:text-2xl hover:bg-[#FFD700] hover:text-black transition-all border-4 border-black inline-block text-center w-full md:w-auto"
+>
+  ENTER THE MENU
+</Link>
         </div>
       </section>
       

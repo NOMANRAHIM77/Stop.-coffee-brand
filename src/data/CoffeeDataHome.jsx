@@ -10,7 +10,7 @@ export const CoffeeDataHome = [
     id: 2,
     name: "Yellow Jacket",
     description: "Light roast, high acidity, and a citrus punch. Hits like a localized power surge.",
-    image: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=500&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1512568400610-62da28bc8a13?q=80&w=500&auto=format&fit=crop",
     tag: "ACIDIC"
   },
   {

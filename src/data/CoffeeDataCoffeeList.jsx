@@ -14,7 +14,7 @@ export const CoffeeDataCoffeeList = [
     description: "Light roast, high acidity, and a citrus punch. Hits like a localized power surge.",
     price: 580,
     ingredients: ["Light Roast Beans", "Lemon Zest", "Carbonated Water"],
-    image: "https://images.unsplash.com/photo-1541167760496-1628856ab752?q=80&w=500&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?q=80&w=500&auto=format&fit=crop",
     tag: "ACIDIC"
   },
   {
@@ -41,7 +41,7 @@ export const CoffeeDataCoffeeList = [
     description: "A heavy stain of espresso on a cloud of thick, dry foam.",
     price: 490,
     ingredients: ["Single Espresso", "Dry Milk Foam"],
-    image: "https://images.unsplash.com/photo-1485808191679-5f63bb3fd8c7?q=80&w=500&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?q=80&w=500&auto=format&fit=crop",
     tag: "SHORT"
   },
   {
@@ -59,7 +59,7 @@ export const CoffeeDataCoffeeList = [
     description: "Roasted hazelnut notes crushed into a dark, buttery roast.",
     price: 780,
     ingredients: ["Medium Roast", "Crushed Hazelnut Syrup", "Oat Milk"],
-    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=500&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?q=80&w=500&auto=format&fit=crop",
     tag: "NUTTY"
   },
   {
@@ -77,7 +77,7 @@ export const CoffeeDataCoffeeList = [
     description: "Salted caramel and dark chocolate mixed with a gritty espresso kick.",
     price: 890,
     ingredients: ["Espresso", "Sea Salt", "Caramel Drizzle", "Cocoa Powder"],
-    image: "https://images.unsplash.com/photo-1572288651181-705f4ef3399d?q=80&w=500&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=500&auto=format&fit=crop",
     tag: "SWEET/SALT"
   },
   {
@@ -95,7 +95,7 @@ export const CoffeeDataCoffeeList = [
     description: "Drip coffee with a shot of espresso. For the overnight shifts.",
     price: 680,
     ingredients: ["House Drip Coffee", "Espresso Shot Addition"],
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=500&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?q=80&w=500&auto=format&fit=crop",
     tag: "OVERLOAD"
   },
   {

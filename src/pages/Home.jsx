@@ -27,12 +27,18 @@ const Home = () => {
         </div>
       </section>
 
-      {/* MARQUEE EFFECT - Keep as is */}
-      <div className="bg-black text-[#FFD700] py-4 border-b-8 border-black overflow-hidden whitespace-nowrap">
-        <div className="animate-marquee inline-block text-xl sm:text-2xl md:text-4xl italic">
-  BEST COFFEE IN THE CITY • NO SURRENDER • HIGH CAFFEINE • STOP CALLING • 
+<div className="relative bg-black text-[#FFD700] py-4 border-b-8 border-black overflow-hidden flex">
+  {/* The container that holds both sets of text */}
+  <div className="flex whitespace-nowrap animate-marquee">
+    <div className="text-xl md:text-4xl italic font-black uppercase px-4">
+      BEST COFFEE IN THE CITY • NO SURRENDER • HIGH CAFFEINE • STOP CALLING • 
+    </div>
+    {/* Duplicate set for seamless looping */}
+    <div className="text-xl md:text-4xl italic font-black uppercase px-4">
+      BEST COFFEE IN THE CITY • NO SURRENDER • HIGH CAFFEINE • STOP CALLING • 
+    </div>
+  </div>
 </div>
-      </div>
 
       {/* PRODUCT GRID SECTION */}
       <section className="px-8 py-24">
