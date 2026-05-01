@@ -27,7 +27,6 @@ const Footer = () => {
             <li><Link to="/home" className="hover:opacity-60 transition-opacity">Home</Link></li>
             <li><Link to="/coffeeList" className="hover:opacity-60 transition-opacity">Menu</Link></li>
             <li><Link to="/ourStory" className="hover:opacity-60 transition-opacity">Our Story</Link></li>
-            <li><Link to="/locations" className="hover:opacity-60 transition-opacity">Locations</Link></li>
           </ul>
         </div>
 

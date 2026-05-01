@@ -1,5 +1,5 @@
 import React from 'react';
-import { CoffeeDataHome } from '../data/coffeeDataHome';
+import { CoffeeDataHome } from '../data/CoffeeDataHome.jsx';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -29,9 +29,9 @@ const Home = () => {
 
       {/* MARQUEE EFFECT - Keep as is */}
       <div className="bg-black text-[#FFD700] py-4 border-b-8 border-black overflow-hidden whitespace-nowrap">
-        <div className="animate-marquee inline-block text-4xl italic">
-          BEST COFFEE IN THE CITY • NO SURRENDER • HIGH CAFFEINE • STOP CALLING • 
-        </div>
+        <div className="animate-marquee inline-block text-xl sm:text-2xl md:text-4xl italic">
+  BEST COFFEE IN THE CITY • NO SURRENDER • HIGH CAFFEINE • STOP CALLING • 
+</div>
       </div>
 
       {/* PRODUCT GRID SECTION */}

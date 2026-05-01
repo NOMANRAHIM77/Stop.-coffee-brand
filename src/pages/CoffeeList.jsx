@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { CoffeeDataCoffeeList } from '../data/coffeeDataCoffeeList';
+import { CoffeeDataCoffeeList } from '../data/CoffeeDataCoffeeList.jsx';
 import { Link } from 'react-router-dom';
 import { Search, Eye, ShoppingCart, CheckCircle2 } from 'lucide-react';
 
 // Redux Imports
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../slices/cartSlice';
+import { addToCart } from '../slices/cartSlice.js';
 
 const CoffeeList = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -108,7 +108,7 @@ const CoffeeList = () => {
               {/* ACTIONS */}
               <div className="grid grid-cols-2 gap-2 mt-6">
                 <Link 
-                  to={`/coffeeList/${coffee.slug || coffee.name}`} 
+                  to={`/coffee/${coffee.slug || coffee.name}`} 
                   className="flex items-center justify-center gap-2 border-2 border-black py-2 hover:bg-zinc-100 transition-colors text-xs"
                 >
                   <Eye size={16} /> VIEW

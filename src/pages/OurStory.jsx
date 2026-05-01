@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const OurStory = () => {
   return (
@@ -73,12 +74,12 @@ const OurStory = () => {
           <p className="text-lg mb-8 italic">
             IF YOU WANT CARAMEL SWIRLS AND WHIPPED CREAM, GO DOWN THE STREET. IF YOU WANT FUEL, STAY HERE.
           </p>
-          <button 
-             onClick={() => window.location.href='/coffeeList'}
+          <Link 
+            to="/coffeeList"
              className="bg-black text-[#FFD700] px-12 py-6 text-2xl hover:bg-[#FFD700] hover:text-black transition-all border-4 border-black"
           >
             ENTER THE MENU
-          </button>
+          </Link>
         </div>
       </section>
       

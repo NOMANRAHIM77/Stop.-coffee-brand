@@ -1,11 +1,12 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Login from './Authentication/Login'
-import AppRoutes from './routes/AppRoutes'
-import PrivateRoute from './routes/PrivateRoute'
+import Login from './Authentication/Login.jsx'
+import AppRoutes from './routes/AppRoutes.jsx'
+import PrivateRoute from './routes/PrivateRoute.jsx'
+import ScrollToTop from './components/ScrollToTop';
 
-import Home from "./pages/Home"
-import AppLayout from './layout/AppLayout'
+import Home from "./pages/Home.jsx"
+import AppLayout from './layout/AppLayout.jsx'
 
 const App = () => {
   return (
