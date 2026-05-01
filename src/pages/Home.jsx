@@ -1,5 +1,6 @@
 import React from 'react';
 import { CoffeeDataHome } from '../data/CoffeeDataHome';
+import QuoteGenerator from '../components/QuoteGenerator'; // 1. Import it
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -39,6 +40,9 @@ const Home = () => {
     </div>
   </div>
 </div>
+
+{/* 3. The Quote Generator Section */}
+      <QuoteGenerator />
 
       {/* PRODUCT GRID SECTION */}
       <section className="px-8 py-24">

@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import authReducer from "../slices/authSlice"; // 
+import authReducer from "../slices/authSlice"; 
 import cartReducer from '../slices/cartSlice';
+import quoteReducer from '../slices/quoteSlice'; // 1. Import the new reducer
 
 export const store = configureStore({
   reducer: {
-    // This 'auth' key is what you'll use in useSelector(state => state.auth)
     auth: authReducer,
     cart: cartReducer,
+    quote: quoteReducer, 
   },
 });
+

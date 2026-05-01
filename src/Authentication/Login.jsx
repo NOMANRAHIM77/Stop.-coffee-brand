@@ -53,6 +53,7 @@ const Login = () => {
         title: `Welcome back, ${authenticatedUser.name}!`,
         isSuccess: true,
       });
+      
 
       dispatch(login({
         id: authenticatedUser.id,
