@@ -68,20 +68,24 @@ const OurStory = () => {
       </section>
 
       {/* SECTION 4: CALL TO ACTION (THE WARNING) */}
-      <section className="p-12 text-center bg-white border-b-8 border-black">
-        <div className="border-8 border-black p-12 inline-block shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] max-w-3xl">
-          <h2 className="text-5xl md:text-7xl mb-6">NOT FOR <br /> EVERYONE.</h2>
-          <p className="text-lg mb-8 italic">
-            IF YOU WANT CARAMEL SWIRLS AND WHIPPED CREAM, GO DOWN THE STREET. IF YOU WANT FUEL, STAY HERE.
-          </p>
-         <Link 
-  to="/coffeeList"
-  className="bg-black text-[#FFD700] px-6 py-4 text-lg md:px-12 md:py-6 md:text-2xl hover:bg-[#FFD700] hover:text-black transition-all border-4 border-black inline-block text-center w-full md:w-auto"
->
-  ENTER THE MENU
-</Link>
-        </div>
-      </section>
+      <section className="px-4 py-12 md:p-12 text-center bg-white border-b-8 border-black">
+  <div className="border-[4px] md:border-8 border-black p-6 md:p-12 inline-block shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] max-w-3xl w-full md:w-auto">
+    
+    <h2 className="text-4xl md:text-7xl mb-6 leading-none">NOT FOR <br /> EVERYONE.</h2>
+    
+    <p className="text-base md:text-lg mb-8 italic font-bold">
+      IF YOU WANT CARAMEL SWIRLS AND WHIPPED CREAM, GO DOWN THE STREET. IF YOU WANT FUEL, STAY HERE.
+    </p>
+
+    <Link 
+      to="/coffeeList"
+      className="bg-black text-[#FFD700] px-6 py-4 text-lg md:px-12 md:py-6 md:text-2xl hover:bg-[#FFD700] hover:text-black transition-all border-4 border-black inline-block text-center w-full md:w-auto shadow-[4px_4px_0px_0px_rgba(255,255,255,0.5)] active:translate-x-1 active:translate-y-1"
+    >
+      ENTER THE MENU
+    </Link>
+    
+  </div>
+</section>
       
     </div>
   );

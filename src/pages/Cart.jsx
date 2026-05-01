@@ -50,37 +50,42 @@ const Cart = () => {
 
   return (
     <div className="bg-zinc-50 min-h-screen p-4 md:p-12 font-black uppercase">
+      
       {/* SUCCESS MODAL */}
-      <Dialog open={showSuccess} onOpenChange={setShowSuccess}>
-        <DialogContent className="border-8 border-black bg-[#FFD700] rounded-none p-10 shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] outline-none">
-          <DialogHeader className="items-center text-center">
-            <div className="bg-black p-4 rounded-full mb-4">
-              <CheckCircle2 size={48} className="text-[#FFD700] animate-bounce" />
-            </div>
-            <DialogTitle className="text-5xl italic font-black text-black leading-none mb-2">
-              PURCHASE <br /> VERIFIED.
-            </DialogTitle>
-          </DialogHeader>
+<Dialog open={showSuccess} onOpenChange={setShowSuccess}>
+  {/* Added 'w-[95vw] max-w-lg' to prevent side-overflow and 'p-6 md:p-10' for spacing */}
+  <DialogContent className="w-[95vw] max-w-lg border-4 md:border-8 border-black bg-[#FFD700] rounded-none p-6 md:p-10 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:shadow-[15px_15px_0px_0px_rgba(0,0,0,1)] outline-none overflow-hidden">
+    
+    <DialogHeader className="items-center text-center">
+      <div className="bg-black p-3 md:p-4 rounded-full mb-4">
+        <CheckCircle2 size={32} className="text-[#FFD700] md:w-12 md:h-12 animate-bounce" />
+      </div>
+      {/* Adjusted text size: 3xl on mobile, 5xl on desktop */}
+      <DialogTitle className="text-3xl md:text-5xl italic font-black text-black leading-none mb-2">
+        PURCHASE <br /> VERIFIED.
+      </DialogTitle>
+    </DialogHeader>
 
-          <div className="text-center space-y-6">
-            <div className="bg-white border-4 border-black p-4 inline-block">
-              <p className="text-xs">TRANSACTION ID:</p>
-              <p className="text-2xl">{orderId}</p>
-            </div>
+    <div className="text-center space-y-4 md:space-y-6">
+      <div className="bg-white border-4 border-black p-3 md:p-4 inline-block w-full sm:w-auto">
+        <p className="text-[10px] md:text-xs">TRANSACTION ID:</p>
+        <p className="text-lg md:text-2xl break-all">{orderId}</p>
+      </div>
 
-            <div className="relative py-10 overflow-hidden border-y-4 border-black">
-              <p className="text-xl italic mb-4">YOUR COFFEE IS ON THE WAY...</p>
-              {/* Delivery Animation */}
-              <div className="flex justify-center animate-pulse">
-                <Truck size={64} strokeWidth={3} className="animate-bounce" />
-              </div>
-              <div className="w-full h-2 bg-black mt-2 animate-pulse"></div>
-            </div>
+      <div className="relative py-6 md:py-10 overflow-hidden border-y-4 border-black">
+        <p className="text-lg md:text-xl italic mb-4">YOUR COFFEE IS ON THE WAY...</p>
+        
+        {/* Delivery Animation */}
+        <div className="flex justify-center">
+          <Truck size={48} strokeWidth={3} className="animate-bounce md:w-16 md:h-16" />
+        </div>
+        <div className="w-full h-2 bg-black mt-2 animate-pulse"></div>
+      </div>
 
-            <p className="text-sm">SYSTEM REBOOTING IN 4 SECONDS...</p>
-          </div>
-        </DialogContent>
-      </Dialog>
+      <p className="text-xs md:text-sm">SYSTEM REBOOTING IN 4 SECONDS...</p>
+    </div>
+  </DialogContent>
+</Dialog>
 
       <div className="max-w-6xl mx-auto">
         <h1 className="text-6xl md:text-8xl italic tracking-tighter mb-12">THE <br /> QUEUE.</h1>
